@@ -1,5 +1,5 @@
 require('dotenv').config()
-const data = require('./data')
+const data = require('./models/data')
 const express = require('express')
 const cors = require('cors')
 const app = express()
