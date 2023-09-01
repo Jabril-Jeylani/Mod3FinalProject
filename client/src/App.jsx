@@ -12,7 +12,6 @@ function App() {
 			<header>
 				<Link to="/">Pet Shop</Link>
 			</header>
-			<main>list products</main>
 			<main>
         <Routes>
           <Route path="product/:slug" element={<Product />} />
