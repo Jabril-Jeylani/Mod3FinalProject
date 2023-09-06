@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import data from "./data";
 import "./App.css";
-import Home from "./pages/Home";
+import Home from "./pages/HomeScreen";
 import { Link, Route, Routes } from "react-router-dom";
-import Product from "./pages/Product";
+import Product from "./components/Product";
 import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
 import { LinkContainer } from "react-router-bootstrap";

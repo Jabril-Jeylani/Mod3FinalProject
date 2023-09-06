@@ -15,7 +15,7 @@ const data = {
             image: '/images/kitten.jpg',
             price: 80,
             countInStock: 10,
-            rating: 4.8,
+            rating: 5,
             numReviews: 10
         },
         {
@@ -24,7 +24,7 @@ const data = {
             image: '/images/bird.jpg',
             price: 200,
             countInStock: 3,
-            rating: 4.2,
+            rating: 4,
             numReviews: 10
         },
         {
@@ -33,8 +33,8 @@ const data = {
             image: '/images/guineapig.jpg',
             price: 100,
             countInStock: 5,
-            rating: 4.5,
-            numReviews: 10
+            rating: 3.5,
+            numReviews: 5
         },
         {
             name: 'Chicken',
@@ -42,7 +42,7 @@ const data = {
             image: '/images/chicken.jpg',
             price: 300,
             countInStock: 5,
-            rating: 4.9,
+            rating: 4.5,
             numReviews: 10
         }
     ]
