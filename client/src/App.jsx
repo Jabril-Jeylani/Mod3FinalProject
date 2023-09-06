@@ -7,6 +7,8 @@ import Product from "./components/Product";
 import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
 import { LinkContainer } from "react-router-bootstrap";
+import HomeScreen from "./pages/HomeScreen";
+import ProductScreen from "./pages/ProductScreen";
 
 function App() {
 	return (
@@ -24,15 +26,15 @@ function App() {
 				</Navbar>
 			</header>
 			<main>
-				<Container>
+				<Container className="mt-3">
 					<Routes>
 						<Route
 							path="product/:slug"
-							element={<Product />}
+							element={<ProductScreen />}
 						/>
 						<Route
 							path="/"
-							element={<Home />}
+							element={<HomeScreen />}
 						/>
 					</Routes>
 				</Container>
