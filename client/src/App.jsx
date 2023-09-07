@@ -12,6 +12,7 @@ import { useContext } from "react";
 import { Store } from "./Store";
 import CartScreen from "./pages/CartScreen";
 import SignInScreen from "./pages/SignInScreen";
+import CompleteScreen from "./pages/CompleteScreen";
 
 function App() {
 	const { state, dispatch: ctxDispatch } = useContext(Store);
@@ -50,7 +51,7 @@ function App() {
 							</Link>
 							{userInfo ? (
 								<NavDropdown
-								title={userInfo.name}
+									title={userInfo.name}
 									id="basic-nav-dropdown"
 								>
 									<LinkContainer to="/profile">
@@ -94,6 +95,10 @@ function App() {
 						<Route
 							path="/signin"
 							element={<SignInScreen />}
+						/>
+						<Route
+							path="/complete"
+							element={<CompleteScreen />}
 						/>
 						<Route
 							path="/"
