@@ -25,5 +25,6 @@ User Cart doesn't reset and clear after succcessful purchase.
 ## Future Enhancements 🔴
 
 I want to implement a full-fledged order screen that asks
-for payment details and delivery address. 
+for payment details and delivery address.
+I also wanted to implement a profile section along with order history. 
 
