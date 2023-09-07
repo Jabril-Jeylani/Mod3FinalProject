@@ -1,4 +1,18 @@
+const bcrypt = require('bcryptjs')
+
 const data = {
+    users:[
+        {
+            username: 'Bob',
+            email: 'bob@mail.com',
+            password: bcrypt.hashSync('bob')
+        },
+        {
+            username: 'Joe',
+            email: 'joe@mail.com',
+            password: bcrypt.hashSync('joe')
+        }
+    ],
     products: [
         {
             // _id: '1',

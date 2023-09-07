@@ -12,7 +12,6 @@ app.use(express.json())
 app.use(cors())
 
 app.use('/api/seed', seedRoutes )
-
 app.use('/api/products', productRoutes)
 
 
