@@ -2,9 +2,9 @@
 
 ## Introduction 🔵
 
-This is my Mod 3 Project in which I decided to create an Ecommerce App themed around a Pet Shop. j
+This is my Mod 3 Project in which I decided to create an Ecommerce App themed around a Pet Shop. 
 
-![Screenshot](https://imgur.com/a/VVOFxtE)
+[Screenshot](https://imgur.com/a/VVOFxtE)
 
 ## Technologies Used 🔵
 
