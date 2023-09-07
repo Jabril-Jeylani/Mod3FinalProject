@@ -13,6 +13,7 @@ import { Store } from "./Store";
 import CartScreen from "./pages/CartScreen";
 import SignInScreen from "./pages/SignInScreen";
 import CompleteScreen from "./pages/CompleteScreen";
+import SignUpScreen from "./pages/SignUpScreen";
 
 function App() {
 	const { state, dispatch: ctxDispatch } = useContext(Store);
@@ -95,6 +96,10 @@ function App() {
 						<Route
 							path="/signin"
 							element={<SignInScreen />}
+						/>
+						<Route
+							path="/signup"
+							element={<SignUpScreen />}
 						/>
 						<Route
 							path="/complete"

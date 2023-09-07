@@ -12,7 +12,7 @@ import axios from "axios";
 
 export default function CartScreen() {
 	const navigate = useNavigate()
-	const { state, dispatch: cxtDispatch } = useContext(Store);
+	const { state, dispatch: ctxDispatch } = useContext(Store);
 	const {
 		cart: { cartItems },
 	} = state;
@@ -23,14 +23,14 @@ export default function CartScreen() {
 			window.alert("Sorry. Product is out of stock");
 			return;
 		}
-		cxtDispatch({
+		ctxDispatch({
 			type: "CART_ADD_ITEM",
 			payload: { ...item, quantity },
 		});
 	};
 
 	const removeItemHandler = (item) => {
-		cxtDispatch({ type: "CART_REMOVE_ITEM", payload: item });
+		ctxDispatch({ type: "CART_REMOVE_ITEM", payload: item });
 	};
 
 	const checkoutHandler = () => {
