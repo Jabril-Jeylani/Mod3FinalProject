@@ -1,6 +1,7 @@
 const data = {
     products: [
         {
+            _id: '1',
             name: 'Dog',
             slug: 'dog',
             image: '/images/dog.jpg',
@@ -11,6 +12,7 @@ const data = {
             numReviews: 10
         },
         {
+            _id: '2',
             name: 'Kitten',
             slug: 'kitten',
             image: '/images/kitten.jpg',
@@ -21,6 +23,7 @@ const data = {
             numReviews: 10
         },
         {
+            _id: '3',
             name: 'Bird',
             slug: 'bird',
             image: '/images/bird.jpg',
@@ -31,6 +34,7 @@ const data = {
             numReviews: 10
         },
         {
+            _id: '4',
             name: 'Guinea Pig',
             slug: 'guinea-pig',
             image: '/images/guineapig.jpg',
@@ -41,6 +45,7 @@ const data = {
             numReviews: 5
         },
         {
+            _id: '5',
             name: 'Chicken',
             slug: 'chicken',
             image: '/images/chicken.jpg',
