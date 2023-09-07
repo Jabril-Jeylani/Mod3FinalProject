@@ -9,7 +9,7 @@ import { Store } from "../Store";
 function Product(props) {
 	const { product } = props;
 
-	const { state, dispatch: cxtDispatch } = useContext(Store);
+	const { state, dispatch: ctxDispatch } = useContext(Store);
 	const {
 		cart: { cartItems },
 	} = state;
@@ -22,7 +22,7 @@ function Product(props) {
 			window.alert("Sorry. Product is out of stock");
 			return;
 		}
-		cxtDispatch({
+		ctxDispatch({
 			type: "CART_ADD_ITEM",
 			payload: { ...item, quantity },
 		});
