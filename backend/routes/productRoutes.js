@@ -2,14 +2,14 @@ const express = require("express");
 const Product = require("../models/productModel");
 const data = require("../models/data.js");
 
-const router = express.Router();
+const productRouter = express.Router();
 
-router.get("/", async (req, res) => {
+productRouter.get("/", async (req, res) => {
 	const products = await Product.find();
 	res.send(products);
 });
 
-router.get("/slug/:slug", async (req, res) => {
+productRouter.get("/slug/:slug", async (req, res) => {
 	const product = await Product.findOne({ slug: req.params.slug });
 	if (product) {
 		res.send(product);
@@ -18,7 +18,7 @@ router.get("/slug/:slug", async (req, res) => {
 	}
 });
 
-router.get("/:id", async (req, res) => {
+productRouter.get("/:id", async (req, res) => {
 	const product = await Product.findById(req.params.id);
 	if (product) {
 		res.send(product);
@@ -27,4 +27,4 @@ router.get("/:id", async (req, res) => {
 	}
 });
 
-module.exports = router;
+module.exports = productRouter;

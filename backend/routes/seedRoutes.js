@@ -2,9 +2,9 @@ const express = require('express')
 const Product = require('../models/productModel')
 const data = require('../models/data.js')
 const User = require('../models/userModel.js')
-const router = express.Router()
+const seedRouter = express.Router()
 
-router.get('/', async (req, res) => {
+seedRouter.get('/', async (req, res) => {
     await Product.deleteMany({})
     const createdProducts = await Product.insertMany(data.products)
     await User.deleteMany({})
@@ -12,4 +12,4 @@ router.get('/', async (req, res) => {
     res.send({ createdProducts, createdUsers })
 })
 
-module.exports = router
+module.exports = seedRouter
