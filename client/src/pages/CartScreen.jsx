@@ -8,7 +8,7 @@ import ListGroup from "react-bootstrap/ListGroup";
 import { Link, useNavigate } from "react-router-dom";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
-import axios from "axios";
+import axios from "../api";
 
 export default function CartScreen() {
 	const navigate = useNavigate()
