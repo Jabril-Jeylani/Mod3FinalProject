@@ -17,6 +17,7 @@ This is my Mod 3 Project in which I decided to create an Ecommerce App themed ar
 
 [Trello Board](https://trello.com/b/0fqZI3nZ/mod-3-project)
 [Deployed App](https://jabril-jeylani-petshop.onrender.com)
+NOTE: Since I've deployed using the free tier of render, it might take up to 30 seconds for the first request to go through. Thank you for your patience. 
 
 ## Unsolved Problems 🟠
 
